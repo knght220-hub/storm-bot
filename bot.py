@@ -69,4 +69,8 @@ def main():
 
         time.sleep(300)  # 5 minutes
 
+# TEMPORARY TEST ALERTS
+send_embed(TORNADO_WEBHOOK, "TEST 🌪️ Tornado Alert", "This is a test tornado alert", "System Test")
+send_embed(HURRICANE_WEBHOOK, "TEST 🌀 Hurricane Alert", "This is a test hurricane alert", "System Test")
+
 main()
