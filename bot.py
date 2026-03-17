@@ -4,9 +4,9 @@ import time
 from datetime import datetime, timezone
 
 # Load secrets from Railway Shared Variables
-API_KEY = os.environ["d510fd82a5bf5e322924208d7a5b48c3"]
-TORNADO_WEBHOOK = os.environ["https://discord.com/api/webhooks/1483534093919457413/JReTKaJribWIkkULZ0VHRESx76fwUKq0w83PsU1S-VjN54e46BPBlcEa8Kh1VDGeCVgK"]
-HURRICANE_WEBHOOK = os.environ["https://discord.com/api/webhooks/1483534194310254593/WMBnzfOlA2iBq3tv9F_4s9JclgLms05d2juzwVzoP23nMiEGXwY-xclzizQ9ooWptr7T"]
+API_KEY = os.environ.get("API_KEY")
+TORNADO_WEBHOOK = os.environ.get("TORNADO_WEBHOOK")
+HURRICANE_WEBHOOK = os.environ.get("HURRICANE_WEBHOOK")
 
 # Keep track of already sent alerts (avoid duplicates)
 sent_alerts = set()
